@@ -1,0 +1,478 @@
+
+/**/
+/*Common Styles*/
+body{
+    max-width: 1170px;
+    font-family: 'Mulish', sans-serif;
+    margin: auto;
+}
+.btn-primary{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: white;
+    border: none;
+}
+i {
+    margin-right: 8px; 
+  }
+.title{
+    font-size: 40px;
+    font-weight: 800;
+}
+hr{
+    margin-top: 30px;
+    width: 872px;
+}
+/*Styles for Nav*/
+.nav-title{
+    margin-left: 5px;
+    font-weight: 800;
+    font-size: 36px;
+    color: #131318;
+}
+#s1{
+    color: #FF5400;
+}
+.s2{
+    color: #FF5400;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav li{
+    list-style: none;
+    margin-left: 44px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424247;
+}
+#special{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    nav{
+        align-items: center;
+    }
+    nav li{
+        display: none;
+    }
+    #special{
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        border: none;
+    }
+    #special:hover{
+        background-color: darkgray;
+    }
+    
+}
+/*Styles for Banner*/
+.banner{
+    margin-top: 20px;
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/banner.png');
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    text-align: center
+}
+.banner-title{
+    color: white;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.banner-text{
+    color:white;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top:30px;
+}
+.option{
+    margin-top: 30px;
+}
+.options{
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-bottom: 100px;
+}
+
+.options input {
+    height: 52px;
+    width: 174px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    padding-left: 20px;
+  }
+  
+.options select {
+    color: #13131880;
+    height: 52px;
+    width: 174px;
+    border-radius: 8px;
+    background: #FFF;
+    margin-left: 10px;
+  }
+  @media screen and (max-width:600px){
+    .banner{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+    .options{
+        flex-direction: column;
+    }
+    .btn-primary{
+        margin-left: 10px;
+    }
+    .options input{
+        margin-left: 10px;
+        width: 154px;
+    }
+    .banner-text{
+        text-align: justify;
+    }
+  }
+  /*style for Popular Tours in Main section*/
+  .main-header{
+    margin-top: 80px;
+    height: 550px;
+    display: flex;
+
+  }
+  .details{
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+ .title{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+ }
+ .main-header-text{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+ }
+ div li{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+ }
+ .mainh{
+    margin-top: 0px;
+    padding: 0px;
+    text-align: justify;
+ }
+ .main-header-img{
+    margin-top: 20px;
+ }
+ @media screen and (max-width:600px){
+    .main-header{
+        padding: 20px;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .main-header-img{
+        margin-top: 50px;
+    }
+    .mainh{
+        text-align: justify;
+    }
+
+ }
+ /*Styles for destination*/
+ .main-body{
+    margin-top: 80px;
+ }
+ 
+ .main-description{
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+ }
+ .images1{
+    display: flex;
+    gap: 10px;
+ }
+ .images2{
+    margin-top: 12px;
+    display: flex;
+    gap: 15px;
+ }
+ .images3{
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+ }
+ .image-container {
+   position: relative;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: none; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+@media screen and (max-width:600px){
+    .main-body{
+        margin-top: 650px;
+    }
+    #title{
+        font-size: 30px;
+    }
+    .images1{
+        flex-direction: column;
+    }
+    .images2{
+        flex-direction: column;
+    }
+    .images3{
+        flex-direction: column;
+    }
+    .image-container img {
+        height: 240px;
+      }
+   
+}
+/*Style for Extra section*/
+.extra-header{
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.extra-image{
+    margin-top: 100px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    padding-left: 20px;
+    border-left: 2px double #FF5400;
+}
+.extra-header {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.box1, .box3, .box5 {
+    max-width: 100%; 
+}
+
+.box2 {
+    padding-left: 20px;
+    border-left: 2px double #FF5400;
+}
+@media screen and (max-width:600px){
+    .extra-image {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+    .box2{
+        margin-bottom: 20px;
+    }
+}
+/*Styles for card section*/
+.card-container{
+    margin-top: 150px;
+}
+.card-header{
+    text-align: center;
+    padding:0px 190px ;
+}
+.card-body{
+    display: flex;
+    justify-content:left;
+}
+.card-body2{
+    margin-top: 0%;
+    display: flex;
+    justify-content:center;
+}
+.cardtitle{
+    color: #030331;
+    font-size: 24px;
+    font-weight: 800;
+}
+.card-text{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+.card{
+    margin-left: 30px;
+    width: 573px;
+    height: 284px;
+    padding: 10px 50px;
+    text-align: justify;
+}
+@media screen and (max-width:600px){
+    .card-container{
+        margin-top: 750px;
+    }
+    #title1{
+        font-size: 30px;
+    }
+    .card-header{
+        padding: 0px;
+    }
+    .card-body{
+        flex-direction: column;
+    }
+    .card-body2{
+        flex-direction: column;
+    }
+    .card{
+        width: 350px;
+        padding-left: 10px 10px;
+        text-align: justify;
+    }
+}
+/*Styles for form*/
+.footer{
+    margin-top: 100px;
+    display: flex;
+   gap: 50px;
+}
+.footer-form{
+    border-radius: 16px;
+    border: 3px dotted #FF5400;;
+    width: 474px;
+    height: 400px;
+    padding-left: 30px;
+}
+.fot-img{
+    position: relative;
+    height: 422px;
+}
+.fot-img img{
+    width: 100%;
+}
+.special-box{
+    position: absolute;
+    top: 60%; 
+    left: 70%;
+    width: 184px;
+    height: 80px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    padding-top: 15px;
+    color: #FFF;
+    font-size: 18px
+}
+form{
+    text-align: center;
+}
+form input{
+    margin: 20px;
+    width: 300px;
+    height: 30px;
+}
+#btn{
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+}
+@media screen and (max-width:600px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-form{
+        display: block;
+        justify-content: center;
+        margin-left: 10%;
+        width: 380px;
+    }
+    .special-box{
+        top: 38%; 
+        left: 55%;
+    }
+}
+/*style for footer*/
+.real-footer{
+    margin-top: 80px;
+    height: 502px;
+    background-color: rgb(255, 230, 251);
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-title{
+    font-size: 32px;
+    font-weight: 800;
+}
+.sec{
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+.fot-text{
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.social{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.bye{
+    margin-top: 60px;
+    text-align: center;
+    color: #131318;
+}
+@media screen and (max-width:600px){
+    body{
+        margin: 10px;
+    }
+    .fot-text{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    hr{
+        margin-top: 30px;
+        width: 300px;
+    }
+}
