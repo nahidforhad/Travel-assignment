@@ -427,8 +427,11 @@ form input{
         height: 30px;
     }
     .special-box{
-        top: 25%; 
+        width: 100px;
+        height: 50px;
+        top: 20%; 
         left: 50%;
+        font-size: 12px
     }
 }
 /*style for footer*/
@@ -478,6 +481,12 @@ form input{
     }
     hr{
         margin-top: 30px;
-        width: 300px;
+        width: 250px;
+    }
+    #s1{
+        font-size: 22px;
+    }
+    .real-footer{
+        width: 100%;
     }
 }
