@@ -359,7 +359,8 @@ nav li{
         flex-direction: column;
     }
     .card{
-        width: 350px;
+        padding: 10px 10px;
+        width: 300px;
         padding-left: 10px 10px;
         text-align: justify;
     }
@@ -368,7 +369,7 @@ nav li{
 .footer{
     margin-top: 100px;
     display: flex;
-   gap: 50px;
+    gap: 50px;
 }
 .footer-form{
     border-radius: 16px;
@@ -418,12 +419,16 @@ form input{
     .footer-form{
         display: block;
         justify-content: center;
-        margin-left: 10%;
-        width: 380px;
+        margin-left: 10px;
+        width: 300px;
+    }
+    form input{
+        width: 200px;
+        height: 30px;
     }
     .special-box{
-        top: 38%; 
-        left: 55%;
+        top: 25%; 
+        left: 50%;
     }
 }
 /*style for footer*/
