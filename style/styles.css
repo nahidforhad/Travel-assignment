@@ -412,12 +412,32 @@ form input{
     width: 300px;
     height: 40px;
 }
-@media screen and (max-width:600px){
+@media screen and (min-width:407.001px) and (max-width:600px){
     .footer{
         flex-direction: column;
     }
     .footer-form{
-        display: block;
+        justify-content: center;
+        margin-left: 10px;
+        width: 300px;
+    }
+    form input{
+        width: 200px;
+        height: 30px;
+    }
+    .special-box{
+        width: 100px;
+        height: 50px;
+        top: 40%; 
+        left: 60%;
+        font-size: 12px
+    }
+}
+@media screen and (max-width:407px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-form{
         justify-content: center;
         margin-left: 10px;
         width: 300px;
@@ -435,25 +455,29 @@ form input{
     }
 }
 /*style for footer*/
-.real-footer{
+.real-footer {
     margin-top: 80px;
     height: 502px;
     background-color: rgb(255, 230, 251);
 }
-.footer-nav{
+
+.footer-nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.footer-title{
+
+.footer-title {
     font-size: 32px;
     font-weight: 800;
 }
-.sec{
+
+.sec {
     margin-top: 10px;
     margin-bottom: 0%;
 }
-.fot-text{
+
+.fot-text {
     color: #5A5A5D;
     text-align: center;
     font-size: 16px;
@@ -461,32 +485,57 @@ form input{
     padding-left: 200px;
     padding-right: 200px;
 }
-.social{
+
+.social {
     margin-top: 30px;
     text-align: center;
     font-size: 30px;
 }
-.bye{
+
+.bye {
     margin-top: 60px;
     text-align: center;
     color: #131318;
 }
-@media screen and (max-width:600px){
-    body{
-        margin: 10px;
-    }
-    .fot-text{
+
+@media screen and (min-width:380.001px) and (max-width:600px) {
+    .fot-text {
         padding-left: 30px;
         padding-right: 30px;
     }
-    hr{
+
+    hr {
         margin-top: 30px;
         width: 250px;
     }
-    #s1{
+
+    #s1 {
         font-size: 22px;
     }
-    .real-footer{
-        width: 100%;
+
+    .real-footer {
+        width: 100%; /* Remove fixed width */
     }
 }
+@media screen and (max-width:380px) {
+    .fot-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    hr {
+        margin-top: 30px;
+        width: 250px;
+    }
+
+    #s1 {
+        font-size: 16px;
+    }
+
+    .real-footer {
+        margin-right: 0px;
+        width: 380px;
+        
+    }
+}
+
